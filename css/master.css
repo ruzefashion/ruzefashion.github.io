@@ -2,12 +2,12 @@ body {
   background-color: #150000;
   background-image: url('../images/bg.png');
   /*, -webkit-gradient(
-      linear, 
-      left top, 
-      left bottom,
-      from(rgba(255,255,255,.3)), 
-      color-stop(50%, rgba(255,255,255,0)),
-      to(rgba(255,255,255,0))
+  linear,
+  left top,
+  left bottom,
+  from(rgba(255,255,255,.3)),
+  color-stop(50%, rgba(255,255,255,0)),
+  to(rgba(255,255,255,0))
   ); */
   background-position: center top;
   background-repeat: no-repeat;
@@ -20,10 +20,10 @@ body > div {
   padding: 0px 50px 50px 50px;
   width: 800px;
   position: relative;
-  
+
   background-color: rgba(0,0,0,0.4);
-  -webkit-border-radius: 0px 6px 0px 6px;
-  -webkit-box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.3);
+  border-radius: 0px 6px 0px 6px;
+  box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.3);
   z-index: 1;
 }
 #logo {
@@ -34,6 +34,12 @@ body > div {
   z-index: 10;
   position: absolute;
   top: -6px; left: -134px;
+}
+#logo a {
+  width: 600px; height: 125px; display: block;
+}
+#logo a img {
+  width: 100%; height: 100%;
 }
 body > div section {
   margin: 0;
@@ -53,8 +59,69 @@ body > div nav {
 }
 body > div nav ul li { display: inline; margin-left: 10px;}
 body > div nav ul li a { color: #fff; text-decoration: none; }
-body > div nav ul li a.current { border-bottom: 3px solid rgba(102,102,102,0.5); }
+body > div nav ul li.on a { border-bottom: 3px solid rgba(102,102,102,0.5); }
 body > div h1 { font-size: 130%; line-height: 1.8em; letter-spacing: 0.2em; text-transform: uppercase; margin-top: 24px; }
-body > div h2 { font-size: 130%; line-height: 1.8em; letter-spacing: 0.2em; text-transform: uppercase; margin-top: 24px;  }
+body > div h2 { font-size: 120%; line-height: 1.8em; letter-spacing: 0.2em; text-transform: uppercase; margin-top: 24px;  }
 body > div p, body > div li  { line-height: 1.8em; }
 body > div:first-child p  { background: transparent url('../images/content_bg.png') no-repeat top left; margin-top: 6px; padding-top: 6px; }
+
+.infobox {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.infobox h2 {
+  font-size: 110%; text-transform: none; margin-top: 0px;
+}
+
+.focus { background: rgba(102,102,102,0.5); }
+.class123-label { font-family: Verdana; font-size: small; }
+.class123-sidebyside { float:left; margin:0 5px 0 0;}
+.class123-twocol { float:left; width:45%; margin:0 5px 0 0;}
+.class123-threecol { float:left; width:30%; margin:0 5px 0 0;}
+.class123-likert_style_li { display:inline-block; vertical-align:middle; text-align:center; top:0px; padding:2px; width:64px; height:50px; margin:0px; margin-right:1px; margin-bottom:1px; font:11px/18px verdana; background:#ddd; zoom:1; *display:inline; }
+.class123-likert_style_li2 { display:inline-block; vertical-align:middle; text-align:center; top:0px; padding:2px; width:64px; height:50px; margin:0px; margin-right:1px; margin-bottom:0px; font:12px/18px verdana; background:#fff; zoom:1; *display:inline; border-top:1px solid #ddd; }
+.fontbold { font-weight: bold; }
+.fontitalic { font-style: italic; }
+.requiredspan { font-family: Verdana; font-size:10px; color:#f00; }
+
+.fancyPhoto {
+  border: 5px solid rgba(255,255,255,0.8);
+  border-radius: 3px;
+}
+
+.shop {
+  position: relative; height: 280px;
+}
+.shop .locationMap {
+  width:300px;
+  height:180px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  border: 5px solid rgb(255,255,255);
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.8);
+}
+.top-images {
+  margin: 10px 0px;
+  text-align: center;
+}
+.top-images .top-left {
+  margin-right: 8px;
+}
+
+#social {
+  position: absolute;
+  bottom: -30px;
+  width: 716px;
+  padding: 0 40px;
+  text-align: center;
+}
+#social a {
+  margin: 0 30px;
+}
+body section a {
+  color: #fff;
+}
